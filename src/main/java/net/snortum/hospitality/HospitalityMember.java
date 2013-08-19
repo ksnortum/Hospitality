@@ -173,7 +173,7 @@ public class HospitalityMember {
 	 * @return the last schedule date or "Never"
 	 */
 	public String displayLastScheduled() {
-		return lastScheduled == null
+		return lastScheduled != null
 				? FORMATTER.format( lastScheduled )
 				: "Never";
 	}
